@@ -1,4 +1,29 @@
 # Self_Learning_DevOps
-Personal Notes
+Personal Notes on YAML
+
+---
+# Starting of YAML should be ---
+# In a YAML file indentation are very important.
+
+"Apple": "I am a red fruit"
+1: "This is my roll No."
+---
+# We can use --- to saperate the documents in YAML
+
+Lists:                      # Listing
+  - Apple
+  - Mango
+  - Banana
+  - Grappes
+  - apple       # YAML is case sensitive apple and Apple are two diff. things
+---
+Cities:
+  - New Delhi
+  - Mumbai
+  - Kolkata
+
+# To validate YAML file you can go to http://www.yamllint.com/ paste the YAML file and click on GO.
+
+...   # To end the document ... is used
 
 
