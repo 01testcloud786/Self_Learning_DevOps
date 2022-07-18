@@ -24,6 +24,99 @@ Cities:
 
 # To validate YAML file you can go to http://www.yamllint.com/ paste the YAML file and click on GO.
 
+# YAML does not support multiline comment
+
+# You can Convert YAML to JSON as well with the help of online tools
+
+---
+# Other way of listing
+# It looks like similar to list in Python
+
+Names: [Dhirendra, Ram, Krishna]
+
+---
+
+# Other way to store key value pair
+# It looks like similar to Dictionary in Python.
+
+{mango: "yellow Fruit", age: 54}
+
+---
+
+# Datatypes in YAML
+# String variables - 3 ways of writing
+
+name: dhirendra kumar
+Fruit: "Apple"
+job: 'DevOps Engineer'
+
+# To preserve the written way we can use below formate, It will be pass in   same format when it will be put in the Object ie. in 2 lines as witten below.
+
+bio: |
+ Hey my name is Dhirendra
+ I am a DevOps Engineer.
+
+# Write a single line in Multiple Line, It will pass in object as single line
+
+message: >
+ this will be 
+ all in 
+ one line.
+---
+
+# Above one is same as 
+message: this will be in one line
+
+---
+# YAML automatically detect the data type but you can Specify as well
+
+number: 6789
+marks: 98.76
+booleanValue: No # You can write n, N, false, False, FALSE
+# Same for True -> y, Y, yes
+
+
+# Specify The Data Type
+
+Num: !!int 89
+positiveNum: !!int 45
+negetiveNum: !!int -45
+binaryNum: !!int 00111110
+string: !!str "Dhirendra"   # String Data Type
+float: !!float 56.78        # Float Data Type
+infinit: !!float .inf       # Infinit
+
+not a num: .nan 
+
+# Null
+
+surname: !!null Null     # or you can use null, NULL, ~
+~: this is a null key
+
+# dates and time
+date: !!timestamp 2022-07-18
+
+---
+
+# Advance Data Type
+
+# Sequence or list
+
+student: !!seq
+ - name
+ - roll_no.
+ - marks
+
+# Sparce sequence - some of the keys will be empty
+sparce seq:
+ - hey
+ - hi
+ - 
+ - 
+ - sur
+
+
+
+
+
 ...   # To end the document ... is used
-
-
